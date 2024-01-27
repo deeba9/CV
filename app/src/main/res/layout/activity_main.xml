@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_cv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/rollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/roll_number"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/cgpa"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/cgpa"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/degreeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/degree_options"
+            android:layout_gravity="center_horizontal" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="188dp"
+                android:layout_height="48dp"
+                android:text="@string/female" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/career_interest"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/academia"
+            android:layout_width="137dp"
+            android:layout_height="48dp"
+            android:text="@string/academia" />
+
+        <CheckBox
+            android:id="@+id/industry"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:text="@string/industry" />
+
+        <CheckBox
+            android:id="@+id/business"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="@string/business" />
+    </LinearLayout>
+        <DatePicker
+            android:id="@+id/dateOfBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/create_cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_cv"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cvRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+</ScrollView>

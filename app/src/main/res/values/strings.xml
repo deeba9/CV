@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CV</string>
+    <string name="create_cv">Create CV</string>
+    <string name="roll_number">Roll No</string>
+    <string name="name">Name</string>
+    <string name="cgpa">CGPA</string>
+    <string name="Degree">Degree</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="academia">Academia</string>
+    <string name="industry">Industry</string>
+    <string name="business">Business</string>
+    <string name="career_interest">Career Interest</string>
+    <string name="display">All CVs</string>
+    <string name="delete">Delete CVs</string>
+    <string-array name="degree_options">
+        <item>Bachelors</item>
+        <item>Masters</item>
+        <item>Doctorate</item>
+        <!-- Add more degree options as needed -->
+    </string-array>
+</resources>
